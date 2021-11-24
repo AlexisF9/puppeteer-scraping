@@ -29,6 +29,26 @@ const url = "https://instagram.com";
     // BTN notif
     await page.waitForSelector('.mt3GC > button'), {visible: true};
     await page.click(".mt3GC > button");
+
+    // Répertoire des messages
+    await page.click("a.xWeGp svg._8-yf5");
+
+    // popup notif
+    await page.waitForSelector('.mt3GC > button'), {visible: true};
+    await page.click(".mt3GC > button");
+
+    // 
+    await page.waitForSelector('img[alt="Photo de profil de maeva.millot"]'), {visible: true};
+    await page.click('img[alt="Photo de profil de maeva.millot"]');
     
+
+    await page.waitForSelector('.mt3GC > button'), {visible: true};
+    await page.click(".mt3GC > button");
+
+    await page.waitForSelector('textarea[placeholder="Votre message…"]'), {visible: true};
+    await page.click('textarea[placeholder="Votre message…"]');
+    await page.type('textarea[placeholder="Votre message…"]', "Je t'aime ❤️❤️", {delay: 150});
+    await page.click('div.X3a-9 div:nth-child(3) button[type=button]');
+    await console.log("Message envoyé !")
     //await browser.close();
 })();
