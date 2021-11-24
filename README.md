@@ -13,5 +13,5 @@ insta.js :
 
 movies.js :
 - Scraping de la liste des plus gros succès au box office (rank, title, boxOffice, year).
-- Ajout/écriture de la liste dans un json.
+- Ajout/écriture de la liste dans un json (data.json).
   
