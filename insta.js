@@ -13,6 +13,7 @@ const url = "https://instagram.com";
     await page.click('.bIiDR');
     
     // login
+    await page.waitForSelector('[name=username]'), {visible: true};
     await page.type('[name=username]', "alexis.flacher38@gmail.com", {delay: 150});
 
     // password
