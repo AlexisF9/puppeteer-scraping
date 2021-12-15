@@ -38,8 +38,8 @@ const url = "https://instagram.com";
     await page.click(".mt3GC > button");
 
     // 
-    await page.waitForSelector('img[alt="Photo de profil de maeva.millot"]'), {visible: true};
-    await page.click('img[alt="Photo de profil de maeva.millot"]');
+    await page.waitForSelector('img[alt="Photo de profil de ..."]'), {visible: true};
+    await page.click('img[alt="Photo de profil de ..."]');
     
 
     await page.waitForSelector('.mt3GC > button'), {visible: true};
@@ -47,7 +47,7 @@ const url = "https://instagram.com";
 
     await page.waitForSelector('textarea[placeholder="Votre message…"]'), {visible: true};
     await page.click('textarea[placeholder="Votre message…"]');
-    await page.type('textarea[placeholder="Votre message…"]', "Je t'aime ❤️❤️", {delay: 150});
+    await page.type('textarea[placeholder="Votre message…"]', "...", {delay: 150});
     await page.click('div.X3a-9 div:nth-child(3) button[type=button]');
     await console.log("Message envoyé !")
     //await browser.close();
